@@ -6,22 +6,13 @@
 </template>
 
 <script>
+import fetchData from "@/mixins/fetchData";
+
 export default {
   name: "HomeView",
-  data() {
-    return {
-      api: {},
-    };
-  },
-  methods: {
-    fetchData() {
-      fetch("http://localhost:3000/home")
-        .then((r) => r.json())
-        .then((r) => (this.api = r));
-    },
-  },
+  mixins: [fetchData],
   created() {
-    this.fetchData();
+    this.fetchData("/home");
   },
 };
 </script>
