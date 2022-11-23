@@ -6,10 +6,10 @@
       </div>
       <ul>
         <li>
-          <router-link to="cursos">Cursos</router-link>
+          <router-link to="/cursos">Cursos</router-link>
         </li>
         <li>
-          <router-link to="contato">Contato</router-link>
+          <router-link to="/contato">Contato</router-link>
         </li>
       </ul>
     </nav>
