@@ -18,7 +18,7 @@ export default {
 
                         this.api = r;
                         this.loading = false;
-                    }, 1500)
+                    }, 200)
                 });
         },
     }
